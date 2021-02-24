@@ -15,7 +15,7 @@ pipeline {
           }
         }
 
-        stage('') {
+        stage('Seccess Meesage_2') {
           steps {
             echo 'You Are Awesome!'
           }
