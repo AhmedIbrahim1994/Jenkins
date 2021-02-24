@@ -8,8 +8,19 @@ pipeline {
     }
 
     stage('Success Message') {
-      steps {
-        echo 'Well Done!'
+      parallel {
+        stage('Success Message') {
+          steps {
+            echo 'Well Done!'
+          }
+        }
+
+        stage('') {
+          steps {
+            echo 'You Are Awesome!'
+          }
+        }
+
       }
     }
 
