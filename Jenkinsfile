@@ -11,7 +11,7 @@ pipeline {
       steps {
         sh '''ls > artahmed.txt
 '''
-        archiveArtifacts(artifacts: './*.txt', fingerprint: true)
+        archiveArtifacts(artifacts: 'target/*.txt', fingerprint: true)
       }
     }
 
