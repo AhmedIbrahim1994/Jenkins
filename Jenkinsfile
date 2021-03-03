@@ -13,7 +13,7 @@ cat pwd.txt
       steps {
         sh '''ls > artahmed.txt
 '''
-        archiveArtifacts(artifacts: '/var/lib/jenkins/workspace/Jenkins_Developmen-branch/*.txt', fingerprint: true)
+        archiveArtifacts(artifacts: '*.txt', fingerprint: true)
       }
     }
 
