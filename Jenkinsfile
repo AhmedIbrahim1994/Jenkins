@@ -9,7 +9,9 @@ pipeline {
 
     stage('Shell Script 1') {
       steps {
-        sh './jenkins/test-all.sh'
+        sh '''ls > artahmed.txt
+'''
+        archiveArtifacts(artifacts: './*.txt', fingerprint: true)
       }
     }
 
