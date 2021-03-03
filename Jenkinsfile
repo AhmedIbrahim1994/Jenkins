@@ -3,7 +3,9 @@ pipeline {
   stages {
     stage('Connect to DSM') {
       steps {
-        sh 'pwd > pwd'
+        sh '''pwd > pwd.txt
+cat pwd.txt
+'''
       }
     }
 
