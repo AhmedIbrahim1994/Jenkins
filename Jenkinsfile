@@ -7,11 +7,5 @@ pipeline {
       }
     }
 
-    stage('Success Message') {
-      steps {
-        echo 'Well Done!'
-      }
-    }
-
   }
 }
